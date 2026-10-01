@@ -15,25 +15,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  configure:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set Pages source to GitHub Actions
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { owner, repo } = context.repo
-            const { data } = await github.request('GET /repos/{owner}/{repo}/pages', { owner, repo })
-            core.info(`Pages build_type is ${data.build_type}`)
-            if (data.build_type !== 'workflow') {
-              await github.request('PUT /repos/{owner}/{repo}/pages', {
-                owner,
-                repo,
-                build_type: 'workflow',
-              })
-              core.info('Pages source set to GitHub Actions')
-            }
-
   build:
     runs-on: ubuntu-latest
     steps:
@@ -58,12 +39,15 @@ jobs:
           path: dist
 
   deploy:
-    needs: [build, configure]
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Wait for the branch publisher
+        run: sleep 75
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
