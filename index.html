@@ -31,7 +31,7 @@
         "@context": "https://schema.org",
         "@type": "AutoRepair",
         "name": "NEV MOTO KLİNİK",
-        "description": "Nevşehir'de motosiklet ve ATV tamiri, bakım ve yedek parça. Yerinde hizmet ve 7/24 yol yardım.",
+        "description": "Nevşehir'de motosiklet ve ATV tamiri, bakımı, yedek parça, yıkama ve 7/24 yol yardım.",
         "telephone": "+905380210445",
         "email": "aliosman344979@gmail.com",
         "url": "https://nevmotoklinik.com/",
@@ -48,6 +48,11 @@
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
           "opens": "09:00",
           "closes": "19:00"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.66727,
+          "longitude": 34.737503
         }
       }
     </script>
@@ -65,10 +70,13 @@
     >
       <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
         <a href="#icerik" class="group flex items-center gap-3">
-          <span
-            class="grid h-11 w-11 place-items-center border border-amber bg-ink-soft text-sm font-bold tracking-wide text-amber"
-            >50</span
-          >
+          <img
+            src="/gallery/logo.jpg"
+            alt=""
+            width="44"
+            height="44"
+            class="h-11 w-11 border border-amber object-cover"
+          />
           <span class="leading-none">
             <span class="display block text-2xl font-extrabold text-cream">NEV MOTO KLİNİK</span>
             <span class="text-xs uppercase tracking-[0.18em] text-muted">Nevşehir</span>
@@ -77,8 +85,8 @@
 
         <nav class="hidden items-center gap-7 text-sm font-medium text-muted md:flex" aria-label="Sayfa">
           <a class="hover:text-cream" href="#hizmetler">Hizmetler</a>
+          <a class="hover:text-cream" href="#atolye">Atölye</a>
           <a class="hover:text-cream" href="#randevu">Randevu</a>
-          <a class="hover:text-cream" href="#yol-yardim">Yol yardım</a>
           <a class="hover:text-cream" href="#iletisim">İletişim</a>
           <a
             data-ig-dm
@@ -101,8 +109,8 @@
       <nav id="mobil-menu" data-menu hidden class="border-t border-line px-5 py-4 md:hidden" aria-label="Mobil">
         <div class="flex flex-col gap-3 text-base">
           <a href="#hizmetler">Hizmetler</a>
+          <a href="#atolye">Atölye</a>
           <a href="#randevu">Randevu</a>
-          <a href="#yol-yardim">Yol yardım</a>
           <a href="#iletisim">İletişim</a>
           <a data-ig-dm class="bg-amber px-4 py-3 text-center font-semibold text-ink" href="https://ig.me/m/nevmoto_klinik50"
             >Instagram'dan randevu</a
@@ -120,8 +128,8 @@
               Tamir, bakım<br />ve yedek parça.
             </h1>
             <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-              NEV MOTO KLİNİK, Nevşehir Merkez'de motosiklet ve ATV tamiri, bakımı ve yedek parçası için hizmet verir.
-              Randevu Instagram mesajıyla alınır. Yol yardım için arayabilirsiniz.
+              Nevşehir'de motosiklet servisi: arıza tespiti, periyodik bakım ve yedek parça. Instagram hesabında ATV
+              tamiri, yerinde hizmet, moto wash ve 7/24 yol yardım da yazıyor. Randevu için mesaj bırakın.
             </p>
             <div class="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
@@ -144,28 +152,14 @@
             </p>
           </div>
 
-          <aside class="plate border border-line bg-ink-soft p-6">
-            <div class="flex items-end justify-between border-b border-line pb-4">
-              <div>
-                <p class="text-xs uppercase tracking-[0.2em] text-muted">Plaka</p>
-                <p class="display text-6xl font-extrabold leading-none text-amber">50</p>
-              </div>
-              <p class="text-right text-sm font-semibold uppercase tracking-[0.16em]">Nevşehir</p>
-            </div>
-            <ul class="mt-5 space-y-3 text-sm">
-              <li class="flex justify-between gap-4 border-b border-line/70 pb-3">
-                <span class="text-muted">Motosiklet</span><span>Tamir, bakım, yedek parça</span>
-              </li>
-              <li class="flex justify-between gap-4 border-b border-line/70 pb-3">
-                <span class="text-muted">ATV</span><span>Tamir, bakım, yedek parça</span>
-              </li>
-              <li class="flex justify-between gap-4 border-b border-line/70 pb-3">
-                <span class="text-muted">Yerinde hizmet</span><span>Var</span>
-              </li>
-              <li class="flex justify-between gap-4">
-                <span class="text-muted">Yol yardım</span><span>7/24</span>
-              </li>
-            </ul>
+          <aside class="plate overflow-hidden border border-line bg-ink-soft">
+            <img
+              src="/gallery/atolye.jpg"
+              alt="Kapadokya'da NEV MOTO KLİNİK atölyesi. Kaynak: Instagram @nevmoto_klinik50"
+              width="720"
+              height="1280"
+              class="aspect-[4/5] w-full object-cover object-center"
+            />
           </aside>
         </div>
       </section>
@@ -175,37 +169,107 @@
           <p class="text-xs font-semibold uppercase tracking-[0.22em] text-amber">Hizmetler</p>
           <h2 class="display mt-3 text-5xl font-extrabold md:text-6xl">Atölyede ve yerinde</h2>
           <p class="mt-4 text-muted">
-            Instagram hesabında duyurulan işler: motosiklet ve ATV tamiri, bakımı, yedek parça, yerinde hizmet ve 7/24 yol
-            yardım. Sitede ayrıca arıza tespiti, periyodik bakım ve orijinal yedek parça belirtiliyor.
+            Liste, nevmotoklinik.com hizmetleri ile @nevmoto_klinik50 biyografisinden. Atölye saatleri Pazartesi–Cumartesi
+            09:00–19:00. Yol yardım 7/24.
           </p>
         </div>
         <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <article class="border border-line bg-ink-soft p-5">
-            <h3 class="display text-3xl font-bold">Motosiklet tamiri</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted">Arıza tespiti ve tamir. Her marka ve model için servis.</p>
+            <h3 class="display text-3xl font-bold">Periyodik bakım</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Yağ değişimi, filtre değişimi ve periyodik bakım.</p>
           </article>
           <article class="border border-line bg-ink-soft p-5">
-            <h3 class="display text-3xl font-bold">Bakım</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted">Periyodik bakım ve motor bakımı.</p>
+            <h3 class="display text-3xl font-bold">Motor bakım ve onarım</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Motor arızası tespiti, revizyon ve performans iyileştirme.</p>
+          </article>
+          <article class="border border-line bg-ink-soft p-5">
+            <h3 class="display text-3xl font-bold">Elektrik ve elektronik</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Elektrik sistemleri, akü, aydınlatma ve elektronik arıza.</p>
+          </article>
+          <article class="border border-line bg-ink-soft p-5">
+            <h3 class="display text-3xl font-bold">Fren ve süspansiyon</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Fren balata, disk, amortisör ve süspansiyon bakımı.</p>
+          </article>
+          <article class="border border-line bg-ink-soft p-5">
+            <h3 class="display text-3xl font-bold">Lastik ve jant</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Lastik değişimi, balans ayarı, rot balans ve jant bakımı.</p>
+          </article>
+          <article class="border border-line bg-ink-soft p-5">
+            <h3 class="display text-3xl font-bold">Yıkama</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">
+              Instagram'da motosiklet ve ATV moto wash. Sitede iç-dış yıkama, pasta cila ve detaylı temizlik de geçiyor.
+            </p>
           </article>
           <article class="border border-line bg-ink-soft p-5">
             <h3 class="display text-3xl font-bold">Yedek parça</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted">Motosiklet ve ATV için yedek parça.</p>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Motosiklet ve ATV yedek parça. Sitede orijinal parça da belirtiliyor.</p>
           </article>
           <article class="border border-line bg-ink-soft p-5">
             <h3 class="display text-3xl font-bold">ATV</h3>
             <p class="mt-2 text-sm leading-relaxed text-muted">ATV tamiri, bakımı ve yedek parça.</p>
           </article>
           <article class="border border-line bg-ink-soft p-5">
-            <h3 class="display text-3xl font-bold">Yerinde hizmet</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted">Atölyeye getiremediğiniz araç için yerinde hizmet.</p>
+            <h3 class="display text-3xl font-bold">Yerinde hizmet ve yol yardım</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Yerinde hizmet ve 7/24 yol yardım, Instagram biyografisinde.</p>
           </article>
-          <article class="border border-line bg-ink-soft p-5">
-            <h3 class="display text-3xl font-bold">Elektrik ve lastik</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted">
-              Motosiklet elektrik arızası ve lastik değişimi, işletmenin kendi sitesinde geçiyor.
+        </div>
+      </section>
+
+      <section id="atolye" class="border-y border-line bg-ink-soft">
+        <div class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+          <div class="max-w-2xl">
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-amber">Atölye</p>
+            <h2 class="display mt-3 text-5xl font-extrabold md:text-6xl">Instagram'dan kareler</h2>
+            <p class="mt-4 text-muted">
+              Fotoğraflar
+              <a class="text-cream underline decoration-amber underline-offset-4" href="https://www.instagram.com/nevmoto_klinik50/"
+                >@nevmoto_klinik50</a
+              >
+              hesabının kendi paylaşımları. nevmotoklinik.com üzerinde atölye fotoğrafı yok.
             </p>
-          </article>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <figure class="border border-line bg-ink">
+              <img
+                src="/gallery/atolye.jpg"
+                alt="Kapadokya kayalıklarının önünde NEV MOTO KLİNİK atölye girişi"
+                width="720"
+                height="1280"
+                class="aspect-[3/4] w-full object-cover"
+              />
+              <figcaption class="px-3 py-3 text-sm text-muted">Atölye, Kapadokya</figcaption>
+            </figure>
+            <figure class="border border-line bg-ink">
+              <img
+                src="/gallery/motosiklet.jpg"
+                alt="Atölyede kırmızı motosiklet ve NEV MOTO KLİNİK yazısı"
+                width="640"
+                height="1136"
+                class="aspect-[3/4] w-full object-cover"
+              />
+              <figcaption class="px-3 py-3 text-sm text-muted">Motosiklet, atölyede</figcaption>
+            </figure>
+            <figure class="border border-line bg-ink">
+              <img
+                src="/gallery/atv-yikama.jpg"
+                alt="NEV MOTO KLİNİK önünde yıkanan kırmızı CFMOTO ATV"
+                width="640"
+                height="1136"
+                class="aspect-[3/4] w-full object-cover"
+              />
+              <figcaption class="px-3 py-3 text-sm text-muted">ATV yıkama</figcaption>
+            </figure>
+            <figure class="border border-line bg-ink">
+              <img
+                src="/gallery/duyuru.jpg"
+                alt="NEV MOTO KLİNİK duyurusu: motosiklet tamiri, bakımı ve yedek parça"
+                width="1080"
+                height="731"
+                class="aspect-[3/4] w-full object-cover object-top"
+              />
+              <figcaption class="px-3 py-3 text-sm text-muted">Instagram duyurusu</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -262,8 +326,8 @@ Uygun olduğum gün ve saat:</pre>
             <p class="text-xs font-semibold uppercase tracking-[0.22em] text-amber">7/24 yol yardım</p>
             <h2 class="display mt-3 text-5xl font-extrabold">Yolda kaldıysanız arayın</h2>
             <p class="mt-4 max-w-xl text-muted">
-              Instagram biyografisinde 7/24 yol yardım ve yerinde hizmet yazıyor. Atölye çalışma saati ayrıca
-              Pazartesi–Cumartesi 09:00–19:00 olarak duyurulmuş.
+              Instagram biyografisinde 7/24 yol yardım ve yerinde hizmet yazıyor. Atölye saati nevmotoklinik.com'da
+              Pazartesi–Cumartesi 09:00–19:00.
             </p>
           </div>
           <div class="flex flex-col justify-center gap-3">
@@ -315,16 +379,43 @@ Uygun olduğum gün ve saat:</pre>
               </dd>
             </div>
             <div class="border border-line p-5">
-              <dt class="text-xs uppercase tracking-[0.16em] text-muted">Harita</dt>
+              <dt class="text-xs uppercase tracking-[0.16em] text-muted">Web</dt>
               <dd class="mt-2 text-lg">
-                <a
-                  class="underline decoration-amber underline-offset-4"
-                  href="https://yandex.com.tr/maps/org/nevmotoklinik/215797528542/"
-                  >Yandex'te Nevmotoklinik</a
-                >
+                <a class="underline decoration-amber underline-offset-4" href="https://nevmotoklinik.com/">nevmotoklinik.com</a>
               </dd>
             </div>
           </dl>
+          <div id="harita" class="mt-8 border border-line">
+            <img
+              src="/gallery/harita.png"
+              alt="OpenStreetMap: 32. Sokak, 2000 Evler, Nevşehir. Pin NEV MOTO KLİNİK konumunda."
+              width="768"
+              height="420"
+              class="w-full"
+            />
+            <iframe
+              title="NEV MOTO KLİNİK haritası: 200 Evler Mah. 32. Sk. No: 22B, Merkez / Nevşehir"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=34.7305%2C38.6643%2C34.7445%2C38.6703&amp;layer=mapnik&amp;marker=38.667270%2C34.737503"
+              class="h-80 w-full border-t border-line bg-ink-soft"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p class="border-t border-line px-4 py-3 text-sm text-muted">
+              Harita © OpenStreetMap katkıda bulunanlar. Pin, Yandex'teki Nevmotoklinik kaydı (32. Sokak, 2000 Evler).
+              Adres metni sitede “200 Evler Mah. 32. Sk. No: 22B, Merkez / Nevşehir”.
+              <a
+                class="text-cream underline decoration-amber underline-offset-4"
+                href="https://www.openstreetmap.org/?mlat=38.667270&mlon=34.737503#map=17/38.667270/34.737503"
+                >OpenStreetMap</a
+              >
+              ·
+              <a
+                class="text-cream underline decoration-amber underline-offset-4"
+                href="https://yandex.com.tr/maps/org/nevmotoklinik/215797528542/"
+                >Yandex</a
+              >
+            </p>
+          </div>
         </div>
       </section>
     </main>
